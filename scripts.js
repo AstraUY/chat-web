@@ -1,5 +1,10 @@
 document.getElementById('sendButton').addEventListener('click', sendMessage);
 document.getElementById('voiceButton').addEventListener('click', sendVoiceMessage);
+document.getElementById('messageInput').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        sendMessage();
+    }
+});
 
 function sendMessage() {
     const messageInput = document.getElementById('messageInput');
