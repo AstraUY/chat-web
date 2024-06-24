@@ -46,17 +46,18 @@ input[type="text"] {
 }
 
 button {
-    background-color: #b0b0b0; /* Fondo gris claro */
-    color: black; /* Iconos negros */
+    background-color: #000000; /* Fondo negro */
+    color: white; /* Iconos blancos */
     border: none;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-left: 5px; /* Separación entre botones */
 }
 
 button:hover {
-    background-color: #a0a0a0;
+    background-color: #333333;
 }
 
 .message {
