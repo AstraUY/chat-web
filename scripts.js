@@ -9,7 +9,6 @@ function sendMessage() {
     const messageInput = document.getElementById('messageInput');
     const message = messageInput.value.trim();
     if (message !== '') {
-        // Simula enviar el mensaje y recibir una respuesta
         const response = processText(message);
         displayMessage(message, 'user');
         displayMessage(response, 'bot');
@@ -19,13 +18,11 @@ function sendMessage() {
 
 function processText(text) {
     if (text.startsWith('reproduce ')) {
-        const cancion = text.substring(9);
-        // Simulación de búsqueda en YouTube y reproducción
-        return `Reproduciendo ${cancion} en YouTube`;
+        const cancion = text.substring(10);
+        return `Reproduciendo ${cancion} en YouTube`; // Esta línea simula la reproducción de la canción
     } else if (text.startsWith('busca ') || text.startsWith('buscame ')) {
         const busqueda = text.substring(text.startsWith('busca ') ? 6 : 8);
-        // Simulación de búsqueda en Google
-        return `Buscando ${busqueda} en Google`;
+        return `Buscando ${busqueda} en Google`; // Esta línea simula la búsqueda en Google
     } else {
         return "Lo siento, no pude procesar tu solicitud.";
     }
